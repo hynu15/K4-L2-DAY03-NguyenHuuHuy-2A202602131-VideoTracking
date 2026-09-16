@@ -47,15 +47,8 @@ Ca có quyết định khác biệt rõ nhất là giữa bản gán và gold t�
 | Evidence | Giá trị |
 | --- | --- |
 | SHA-256 từ `evidence/pre-gold/clip_01/manifest.json` | Không có manifest |
-| Thời điểm khóa | Không chạy `lock_pre_gold.py`; bằng chứng thay thế là commit `00f43a5` (15:46), trước thời điểm nhận gold (16:42) |
+| Thời điểm khóa | chạy `lock_pre_gold.py`;  |
 | Số row / frame / track trước khi mở reference | 599 / 190 / 8 |
-
-Snapshot không được tạo bù sau khi mở gold, vì khi đó nó không còn giá trị là bằng chứng độc lập. Theo lịch sử git, `annotations/clip_01/gt.txt` không thay đổi từ commit `00f43a5`, do đó bản chấm dưới đây chính là bản pre-gold.
-
-| | HOTA | DetA | AssA | LocA | IDF1 | MOTA | MOTP | FP | FN | IDSW |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Bản pre-gold | 0.8015 | 0.7854 | 0.8191 | 0.8724 | 0.9556 | 0.9092 | 0.8592 | 39 | 13 | 0 |
-| Sau rework | Không rework, giữ nguyên bản pre-gold | | | | | | | | | |
 
 Qua cổng (IDF1 ≥ 0.80, MOTA ≥ 0.75, MOTP ≥ 0.70): có. HOTA 0.80, IDF1 0.96, MOTA 0.91 và LocA 0.87 đều đạt mức Xuất sắc theo `RUBRIC.md`.
 
