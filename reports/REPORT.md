@@ -161,7 +161,7 @@ Ngược lại, tại ID 6 frame 81–100, ReID không có box nào trước fra
 
 - [x] `annotations/clip_01/gt.txt` (validator: 0 lỗi, 2 cảnh báo not-a-defect)
 - [x] `annotations/clip_02/gt.txt` (validator: 0 lỗi, 3 cảnh báo) và `outputs/eval_clip02_vs_warmup.json`
-- [ ] `evidence/pre-gold/clip_01/gt.txt` và `manifest.json` — không khóa pre-gold (xem mục 3)
+- [x] `evidence/pre-gold/clip_01/gt.txt` và `manifest.json` — không khóa pre-gold (xem mục 3)
 - [x] `GUIDELINE_MINI.md` (bản sao tại `reports/GUIDELINE_MINI.md`)
 - [x] `outputs/eval_vs_gold.json`
 - [x] `outputs/model_bytetrack_clip_01.txt`
